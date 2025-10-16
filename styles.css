@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.hero {
+  background-image: url("images/imageHero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #fff;
+}
+body {
+  overflow-x: hidden;
+  /* font-family: 'Rufina', serif; */
+  font-family: "Raleway", sans-serif;
+  /* font-family: 'Times New Roman', Times, serif; */
+}
+nav {
+  background-color: transparent;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  color: #fff;
+  background: #03030333;
+  font-family: rufina;
+}
+.nav-lists {
+  list-style: none;
+}
+.nav-lists li {
+  display: inline-block;
+  gap: 30px;
+  font-size: 20px;
+  font-family: rufina;
+  padding: 0px 20px;
+}
+.nav-lists li a {
+  transition: all 0.3sec ease 0s;
+}
+.nav-lists li a:hover {
+  color: #0088;
+}
+
+/* hero section start*/
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 10rem;
+}
+.hero-text {
+  font-family: Rufina;
+  font-size: 69px;
+  line-height: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.hero-desc {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 24.89px;
+  background-color: #fff;
+  padding: 5px 10px;
+  color: #c9bdab;
+  margin-bottom: 4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.arrow {
+  display: inline-flex; /* Use inline-flex for tight fit */
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #c9bdab;
+  padding: 8px 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  text-align: center;
+}
+.row {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  /* padding: 10px 10px; */
+  /* margin-top: 20px; */
+}
+.cont {
+  color: #000;
+}
+.btn {
+  border: none;
+  padding: 15px 20px;
+  background-color: #5b656f;
+  color: #fff;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  cursor: pointer;
+}
+
+/* hero section end*/
+
+/* villa start */
+.villa-text {
+  font-family: "rufina";
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 42px;
+  margin-bottom: 2rem;
+}
+.villa-desc {
+  font-family: "raleway";
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5rem;
+  color: #5b656f;
+}
+.villa-name {
+  font-size: 35px;
+  font-family: "rufina";
+  margin-left: 15px;
+}
+.room {
+  margin-left: 15px;
+}
+.people {
+  margin-left: 15px;
+}
+.short-desc {
+  margin-bottom: 10px;
+}
+.guests {
+  display: flex;
+  gap: 50px;
+  line-height: 2.4;
+}
+.villa {
+  border-radius: 20px;
+}
+.card-villas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+.card-villa {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 0px 0px 30px 0px;
+  border-bottom-right-radius: 70px;
+}
+/* villa end */
+
+/* region start  */
+.region-container {
+  background-color: #c9bdab;
+  padding: 45px 15px;
+  border-bottom-right-radius: 100px;
+}
+.region-text {
+  font-family: "Rufina", serif;
+  font-size: 50px;
+  text-align: center;
+  flex-wrap: wrap;
+  color: #000;
+}
+.region-desc {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #181d24;
+  margin-bottom: 30px;
+  margin-top: 1rem;
+  line-height: 1.4;
+  flex-wrap: wrap;
+}
+.regions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+/* region end */
+
+/* prop start */
+.prop-text {
+  font-family: "Rufina", serif;
+  font-size: 50px;
+  text-align: center;
+  flex-wrap: wrap;
+  color: #000;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+.wave {
+  margin-bottom: 25px;
+}
+.wave-text {
+  margin-bottom: 10px;
+}
+.prop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 8rem;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+}
+
+/* prop end */
+
+/* host start */
+.host {
+  background-image: url("images/mosque-pictures-moroccan-wall-pattern.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  color: #fff;
+  margin-bottom: 10rem;
+  border-bottom-right-radius: 150px;
+}
+.come-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* padding: 20px 10px; */
+  /* margin-top: 10rem; */
+}
+.border {
+  margin-top: 10rem;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  background-color: #fff;
+  padding: 26px 30px;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+.come {
+  font-family: "Raleway";
+  font-size: px;
+  /* margin-top: 6rem; */
+  margin-bottom: 1rem;
+  color: #000;
+  flex-wrap: wrap;
+}
+.come-desc {
+  font-family: "Rufina";
+  font-size: 46px;
+  margin-bottom: 2rem;
+  color: #000;
+  flex-wrap: wrap;
+}
+.come-text {
+  font-family: "Raleway";
+  font-size: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  color: #181d24;
+}
+.bot {
+  border: none;
+  padding: 15px 8.9rem;
+  background-color: #5b656f;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: #fff;
+  font-family: "raleway";
+  cursor: pointer;
+}
+/* host end */
+
+/* about start */
+.about-content {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 10rem;
+  margin-bottom: 5rem;
+}
+.imgs {
+  width: 500px;
+}
+.abt {
+  font-size: 50px;
+  font-family: "Rufina", serif;
+  margin-bottom: 1rem;
+}
+/* .about-main{
+  line-height: 1.4;
+} */
+.about-desc,
+.about-desc-1,
+.about-desc-2,
+.about-desc-3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  color: #181d24;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+.we {
+  font-family: "rufina";
+  font-size: 20px;
+  color: #181d24;
+  margin-top: 4rem;
+  line-height: 1.4;
+  background-color: #dfe3e7;
+  padding: 10px 10px;
+}
+/* about end */
