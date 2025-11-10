@@ -632,7 +632,22 @@ button:hover {
     height: auto;
     margin-bottom: 1.5rem;
   }
-
+.come-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 300px; 
+  width: 90%;
+}
+  .imgs {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
   .contact-content {
     flex-direction: column;
     align-items: center;
@@ -672,8 +687,7 @@ button:hover {
     height: 100vh;
     position: relative;
   }
-  .social-icons{
+  .social-icons {
     justify-content: center;
   }
-
 }
