@@ -49,6 +49,32 @@ header {
 .nav-lists li a:hover {
   color: #0088;
 }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
 
 /* hero section start*/
 .hero-main {
@@ -351,7 +377,7 @@ header {
   margin-bottom: 15rem;
   /* border-bottom-right-radius: 150px; */
 }
-.contact-container {
+.contact-content {
   display: flex;
   gap: 2rem;
   justify-content: center;
@@ -371,7 +397,8 @@ header {
   flex: 1;
   max-width: 400px;
 }
-.info,.from {
+.info,
+.from {
   font-family: "rufina";
   margin-bottom: 1rem;
   font-size: 30px;
@@ -454,7 +481,199 @@ button:hover {
 /* footer end  */
 
 /*  end start */
-.ending-container{
-  background-color: #DFE3E7;
+.ending-container {
+  background-color: #dfe3e7;
+  padding: 40px;
+}
+.ending-content {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+.lux {
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+.sed {
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  flex-wrap: wrap;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+.cont {
+  font-family: Raleway;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+.num {
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0%;
+  vertical-align: middle;
 }
 /*  end start */
+
+/* terms */
+.terms-content {
+  display: flex;
+  justify-content: space-around;
+  background-color: #dfe3e7;
+}
+.cog {
+  display: flex;
+  gap: 1.4rem;
+  margin-left: 2rem;
+}
+/* terms */
+
+/* responsive design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-lists {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    background-color: #181d24;
+    padding: 25px;
+    width: 200px;
+    border-radius: 10px;
+    gap: 15px;
+  }
+
+  .nav-lists.active {
+    display: flex;
+  }
+  .arrow {
+    display: none;
+  }
+  .hero-text {
+    margin-top: 15rem;
+    flex-wrap: wrap;
+    font-size: 35px;
+  }
+  .hero-desc {
+    /* margin-top: 12rem; */
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
+  .villa-text {
+    flex-wrap: wrap;
+  }
+  .villa-desc {
+    flex-wrap: wrap;
+  }
+  .villa {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+  }
+  .region-desc {
+    flex-wrap: wrap;
+  }
+  .about-text {
+    flex-wrap: wrap;
+  }
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-desc,
+  .about-desc-1,
+  .about-desc-2,
+  .about-desc-3,
+  .abt,
+  .we {
+    flex-wrap: wrap;
+  }
+  .ending-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .bottom-ending {
+    margin-top: 1.9rem;
+  }
+  .terms-content {
+    flex-direction: column;
+  }
+  .bottom-terms {
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  .regions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .regions img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    gap: 2rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    margin-top: 0;
+    width: 100%;
+    max-width: 95%;
+  }
+
+  .contact-info {
+    text-align: center;
+    flex-direction: column;
+    border-top-right-radius: 40px;
+    padding: 40px;
+  }
+
+  .contact-form {
+    padding: 40px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .connect {
+    height: 100vh;
+    position: relative;
+  }
+  .social-icons{
+    justify-content: center;
+  }
+
+}
