@@ -590,9 +590,6 @@ button:hover {
     width: 100%;
     height: auto;
   }
-  .region-desc {
-    flex-wrap: wrap;
-  }
   .about-text {
     flex-wrap: wrap;
   }
@@ -622,9 +619,15 @@ button:hover {
     margin-top: 1rem;
     margin-left: 2rem;
   }
+  .cog {
+    flex-direction: column;
+  }
   .regions {
     flex-direction: column;
     align-items: center;
+  }
+  .region-desc {
+    flex-wrap: wrap;
   }
   .regions img {
     max-width: 450px;
@@ -632,16 +635,16 @@ button:hover {
     height: auto;
     margin-bottom: 1.5rem;
   }
-.come-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-width: 300px; 
-  width: 90%;
-}
+  .border {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 400px;
+    width: 100%;
+  }
   .imgs {
     max-width: 350px;
     width: 100%;
@@ -690,4 +693,43 @@ button:hover {
   .social-icons {
     justify-content: center;
   }
+}
+
+@media (max-width: 640px) {
+  .villa {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+  }
+  .regions img {
+    max-width: 330px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+  .border{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 340px;
+    width: 80%;
+  }
+.bot {
+  border: none;
+  padding: 13px 5rem;
+  background-color: #5b656f;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: #fff;
+  font-family: "raleway";
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+.come, .come-desc,
+.come-text{
+  flex-wrap: wrap;
+}
 }
